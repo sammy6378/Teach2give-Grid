@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Courier New', Courier, monospace; */
+}
+
+body{
+    background-color:rgba(237,242,248,255);
+}
+
+header{
+    width: 100vw;
+    height: 100vh;
+}
+
+.container{
+    display: grid;
+    width: 100%;
+    grid-template-columns: .5fr .3fr 300px;
+    justify-content: center;
+    padding: 1em;
+    gap:1.6em;
+}
+
+.container .content-box{
+    border-radius: 10px;
+    padding: 1em;
+} 
+
+.content-box:first-child{
+    display: grid;
+    background: rgba(115,63,200,255);
+}
+
+.hero{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-content:space-between;
+}
+
+.about{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+
+.about img{
+    border-radius: 50%;
+    border: 2px solid #ededed;
+    width: 35px;
+}
+
+.one p,.four p{
+color: #fff;
+padding-top: 1em;
+padding-bottom: 1em;
+font-size: 1.1em;
+}
+
+.one span,.two span,.four span{
+    color: silver;
+}
+
+.hero .image img{
+    width: 50px;
+}
+
+.name h3{
+    color: #fff;
+    font-size: .9em;
+}
+
+.txt h3{
+    font-size: .9em;
+}
+
+.name span{
+    font-size: .9em;
+}
+
+.two{
+    background: rgba(73,85,107,255);
+}
+
+.two h2{
+    color: #fff;
+}
+
+
+.three{
+    background: rgba(254,255,253,255);
+    order: 2;
+}
+
+.three h2,.five h2,.two h2{
+padding-top: 1em;
+padding-bottom: 1em;
+font-size: 1.6em;
+}
+
+
+.three span,.two span,.one span{
+    line-height: 1.4em;
+}
+
+.four{
+    background: rgba(24,32,45,255);
+    order: 1;
+}
+
+.five{
+    background: #ffffff;
+    grid-row: span 2;
+    
+}
+
+@media screen and (max-width:768px) {
+    .container{
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+}
